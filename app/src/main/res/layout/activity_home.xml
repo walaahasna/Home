@@ -1,0 +1,37 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<include layout="@layout/myloolbar_layout" android:id="@+id/toolbar"/>
+
+<android.support.v4.widget.DrawerLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/maincontent_frag"
+
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/framlayout">
+
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+    <fragment
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:name="com.example.jit.home.MyNavigationDrawerFragment"
+        android:layout_gravity="start"/>
+
+</android.support.v4.widget.DrawerLayout></LinearLayout>

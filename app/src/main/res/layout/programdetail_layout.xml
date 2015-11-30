@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+   >
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:id="@+id/videoView"
+        android:layout_weight="0.21"
+        android:background="@drawable/er"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textView2"
+        android:layout_weight="0.21" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="153dp"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/button1" >
+    </ListView>
+
+    <EditText
+        android:inputType="textNoSuggestions"
+        android:textColorHighlight="#ff7eff15"
+        android:textColorHint="#3F51B5"
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter your comment"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="50dp"
+         />
+    <Button
+        style="@style/ButtonText"
+        android:background="@drawable/button6shape"
+
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:layout_centerHorizontal="true"
+        android:text="comment"
+android:paddingLeft="20dp"
+        android:layout_weight="0.10"
+        android:layout_marginTop="20dp"
+        />
+
+</LinearLayout>
